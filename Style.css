@@ -1,0 +1,411 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+nav{
+    background:#000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+    border-bottom:2px solid gold;
+}
+
+.logo{
+    color:gold;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin-left:15px;
+    font-size:15px;
+}
+
+.menu a:hover{
+    color:gold;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6));
+}
+
+.hero h1{
+    color:gold;
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    background:gold;
+    color:black;
+    padding:12px 22px;
+    margin:8px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:white;
+}
+.hero-img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+.booking{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.booking h2{
+    color:gold;
+    margin-bottom:20px;
+}
+
+.booking input{
+    width:90%;
+    max-width:350px;
+    padding:12px;
+    margin:10px;
+    border-radius:8px;
+    border:none;
+}
+
+.booking button{
+    background:gold;
+    color:black;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    font-weight:bold;
+}
+.slider{
+    width:100%;
+    overflow:hidden;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+.slide{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    display:block;
+}
+.food-menu{
+    text-align:center;
+    padding:30px;
+}
+
+.food-card{
+    background:#fff;
+    margin:15px;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 0 10px #ccc;
+}
+.food-card h3{
+    color:black;
+}
+
+.food-card p{
+    color:black;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.food-menu h2{
+    color:gold;
+}
+.gallery{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.gallery h2{
+    color:gold;
+    margin-bottom:20px;
+}
+
+.gallery-box{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.gallery-box img{
+    width:300px;
+    height:200px;
+    object-fit:cover;
+    border-radius:15px;
+}
+.contact{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.contact h2{
+    color:gold;
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin:10px;
+    font-size:18px;
+}
+.reviews{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.reviews h2{
+    color:gold;
+    margin-bottom:20px;
+}
+
+.review-card{
+    background:white;
+    color:black;
+    padding:20px;
+    margin:15px;
+    border-radius:10px;
+}
+footer{
+    background:#000;
+    text-align:center;
+    padding:25px;
+    border-top:2px solid gold;
+}
+
+footer h3{
+    color:gold;
+    margin-bottom:10px;
+}
+
+footer p{
+    margin:8px;
+}
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+.menu{
+    margin-top:10px;
+}
+
+.menu a{
+    font-size:14px;
+    margin:5px;
+}
+
+.hero h1{
+    font-size:28px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.gallery-box img{
+    width:90%;
+}
+
+.food-card{
+    margin:10px;
+}
+
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    overflow-y: scroll;
+}
+.slide{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px;
+    display:none;
+}
+
+.slide:first-child{
+    display:block;
+}
+.floating-whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    text-align:center;
+    line-height:60px;
+    font-size:30px;
+    text-decoration:none;
+    box-shadow:0 4px 10px rgba(0,0,0,.4);
+    z-index:999;
+}
+
+.floating-call{
+    position:fixed;
+    bottom:90px;
+    right:20px;
+    width:60px;
+    height:60px;
+    background:#007BFF;
+    color:white;
+    border-radius:50%;
+    text-align:center;
+    line-height:60px;
+    font-size:30px;
+    text-decoration:none;
+    box-shadow:0 4px 10px rgba(0,0,0,.4);
+    z-index:999;
+}
+.top-banner{
+    background:#d32f2f;
+    color:#fff;
+    text-align:center;
+    padding:10px;
+    font-size:16px;
+    font-weight:bold;
+    animation:bannerMove 12s linear infinite;
+    white-space:nowrap;
+    overflow:hidden;
+}
+
+@keyframes bannerMove{
+    0%{text-indent:100%;}
+    100%{text-indent:-100%;}
+}
+.delivery{
+    padding:40px 20px;
+    text-align:center;
+    background:#1b1b1b;
+}
+
+.delivery h2{
+    color:gold;
+    margin-bottom:15px;
+}
+
+.delivery-box{
+    background:#222;
+    border:2px solid gold;
+    border-radius:15px;
+    padding:20px;
+    margin-top:20px;
+}
+
+.delivery-box h3{
+    color:#25D366;
+    margin-bottom:10px;
+}
+
+.delivery-box p{
+    color:white;
+    margin:8px 0;
+}
+.top-bar{
+    background:linear-gradient(90deg,#d4af37,#ff9800);
+    color:#000;
+    text-align:center;
+    padding:10px;
+    font-weight:bold;
+    font-size:15px;
+    animation:blink 2s infinite;
+}
+
+@keyframes blink{
+    50%{opacity:.8;}
+}
+.tagline{
+    color:#fff;
+    font-size:18px;
+    margin:15px 0;
+}
+.why-us{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.why-us h2{
+    color:gold;
+    margin-bottom:20px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:15px;
+}
+
+.feature{
+    background:#222;
+    color:white;
+    padding:15px;
+    border:2px solid gold;
+    border-radius:12px;
+    font-weight:bold;
+}
+.delivery{
+    background:linear-gradient(135deg,#1b1b1b,#333);
+    border:2px solid gold;
+    border-radius:20px;
+    margin:30px 15px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 0 20px rgba(255,215,0,.3);
+}
+
+.delivery h2{
+    color:#25D366;
+    font-size:30px;
+}
+
+.delivery h3{
+    color:gold;
+    margin:15px 0;
+}
+
+.delivery p{
+    font-size:18px;
+    margin:10px 0;
+} 
+select{
+    width:90%;
+    max-width:350px;
+    padding:12px;
+    margin:10px;
+    border-radius:8px;
+    border:none;
+    font-size:16px;
+}
