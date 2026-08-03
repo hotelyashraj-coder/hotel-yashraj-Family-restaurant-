@@ -47,3 +47,6 @@ document.querySelectorAll('.menu a').forEach(link => {
         }
     });
 });
+function closePopup(){
+    document.getElementById("welcomePopup").style.display = "none";
+}
